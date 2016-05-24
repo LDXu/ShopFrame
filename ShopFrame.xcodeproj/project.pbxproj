@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3780748ACA3ED171C702E319 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AFA3ED4F2CB0B56FE6049977 /* libPods.a */; };
 		E574BA2B1CF4219500FDB9B4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E574BA2A1CF4219500FDB9B4 /* main.m */; };
 		E574BA2E1CF4219500FDB9B4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E574BA2D1CF4219500FDB9B4 /* AppDelegate.m */; };
 		E574BA311CF4219500FDB9B4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E574BA301CF4219500FDB9B4 /* ViewController.m */; };
@@ -16,6 +17,10 @@
 		E574BA3C1CF4219500FDB9B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E574BA3A1CF4219500FDB9B4 /* LaunchScreen.storyboard */; };
 		E574BA471CF4219500FDB9B4 /* ShopFrameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E574BA461CF4219500FDB9B4 /* ShopFrameTests.m */; };
 		E574BA521CF4219500FDB9B4 /* ShopFrameUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E574BA511CF4219500FDB9B4 /* ShopFrameUITests.m */; };
+		E574BA731CF43A4300FDB9B4 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E574BA711CF43A4300FDB9B4 /* BaseViewController.m */; };
+		E574BA771CF43ADD00FDB9B4 /* NetworkService.m in Sources */ = {isa = PBXBuildFile; fileRef = E574BA761CF43ADD00FDB9B4 /* NetworkService.m */; };
+		E574BA7A1CF43AF700FDB9B4 /* NetworkServiceItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E574BA791CF43AF700FDB9B4 /* NetworkServiceItem.m */; };
+		E574BA7D1CF4490F00FDB9B4 /* NSDictionary+SafeObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E574BA7C1CF4490F00FDB9B4 /* NSDictionary+SafeObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +41,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		088F0B2AE8750562F11F0C3B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		220D16039A5AAEF697B6AE90 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		AFA3ED4F2CB0B56FE6049977 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E574BA261CF4219500FDB9B4 /* ShopFrame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShopFrame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E574BA2A1CF4219500FDB9B4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E574BA2C1CF4219500FDB9B4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -53,6 +61,19 @@
 		E574BA4D1CF4219500FDB9B4 /* ShopFrameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShopFrameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E574BA511CF4219500FDB9B4 /* ShopFrameUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShopFrameUITests.m; sourceTree = "<group>"; };
 		E574BA531CF4219500FDB9B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E574BA661CF4371700FDB9B4 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		E574BA681CF437D800FDB9B4 /* CommonDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonDefine.h; sourceTree = "<group>"; };
+		E574BA691CF4380E00FDB9B4 /* ApiDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApiDefine.h; sourceTree = "<group>"; };
+		E574BA6A1CF4382800FDB9B4 /* ColorDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorDefine.h; sourceTree = "<group>"; };
+		E574BA6B1CF4383A00FDB9B4 /* NotificationDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationDefine.h; sourceTree = "<group>"; };
+		E574BA701CF43A4300FDB9B4 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		E574BA711CF43A4300FDB9B4 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		E574BA751CF43ADD00FDB9B4 /* NetworkService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkService.h; sourceTree = "<group>"; };
+		E574BA761CF43ADD00FDB9B4 /* NetworkService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkService.m; sourceTree = "<group>"; };
+		E574BA781CF43AF700FDB9B4 /* NetworkServiceItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkServiceItem.h; sourceTree = "<group>"; };
+		E574BA791CF43AF700FDB9B4 /* NetworkServiceItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkServiceItem.m; sourceTree = "<group>"; };
+		E574BA7B1CF4490F00FDB9B4 /* NSDictionary+SafeObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+SafeObject.h"; sourceTree = "<group>"; };
+		E574BA7C1CF4490F00FDB9B4 /* NSDictionary+SafeObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+SafeObject.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3780748ACA3ED171C702E319 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +102,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		16F913F116A0A9F8968F1201 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				220D16039A5AAEF697B6AE90 /* Pods.debug.xcconfig */,
+				088F0B2AE8750562F11F0C3B /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D089D2045D2755176C02312C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AFA3ED4F2CB0B56FE6049977 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E574BA1D1CF4219500FDB9B4 = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +126,8 @@
 				E574BA451CF4219500FDB9B4 /* ShopFrameTests */,
 				E574BA501CF4219500FDB9B4 /* ShopFrameUITests */,
 				E574BA271CF4219500FDB9B4 /* Products */,
+				16F913F116A0A9F8968F1201 /* Pods */,
+				D089D2045D2755176C02312C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,9 +146,20 @@
 			children = (
 				E574BA2C1CF4219500FDB9B4 /* AppDelegate.h */,
 				E574BA2D1CF4219500FDB9B4 /* AppDelegate.m */,
+				E574BA601CF435C100FDB9B4 /* SDKS */,
+				E574BA5F1CF435B200FDB9B4 /* Controller */,
+				E574BA621CF435F900FDB9B4 /* Common */,
+				E574BA641CF4361500FDB9B4 /* CustomView */,
+				E574BA631CF4360B00FDB9B4 /* Category */,
+				E574BA611CF435E800FDB9B4 /* Service */,
 				E574BA2F1CF4219500FDB9B4 /* ViewController.h */,
 				E574BA301CF4219500FDB9B4 /* ViewController.m */,
 				E574BA321CF4219500FDB9B4 /* Main.storyboard */,
+				E574BA661CF4371700FDB9B4 /* PrefixHeader.pch */,
+				E574BA681CF437D800FDB9B4 /* CommonDefine.h */,
+				E574BA691CF4380E00FDB9B4 /* ApiDefine.h */,
+				E574BA6A1CF4382800FDB9B4 /* ColorDefine.h */,
+				E574BA6B1CF4383A00FDB9B4 /* NotificationDefine.h */,
 				E574BA381CF4219500FDB9B4 /* Assets.xcassets */,
 				E574BA3A1CF4219500FDB9B4 /* LaunchScreen.storyboard */,
 				E574BA3D1CF4219500FDB9B4 /* Info.plist */,
@@ -143,6 +195,88 @@
 			path = ShopFrameUITests;
 			sourceTree = "<group>";
 		};
+		E574BA5F1CF435B200FDB9B4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E574BA6F1CF43A2400FDB9B4 /* BaseViewController */,
+				E574BA6C1CF4392500FDB9B4 /* HomeViewController */,
+				E574BA6D1CF439EC00FDB9B4 /* ShopCartViewController */,
+				E574BA6E1CF43A0B00FDB9B4 /* MeViewController */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E574BA601CF435C100FDB9B4 /* SDKS */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SDKS;
+			sourceTree = "<group>";
+		};
+		E574BA611CF435E800FDB9B4 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				E574BA751CF43ADD00FDB9B4 /* NetworkService.h */,
+				E574BA761CF43ADD00FDB9B4 /* NetworkService.m */,
+				E574BA781CF43AF700FDB9B4 /* NetworkServiceItem.h */,
+				E574BA791CF43AF700FDB9B4 /* NetworkServiceItem.m */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		E574BA621CF435F900FDB9B4 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		E574BA631CF4360B00FDB9B4 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				E574BA7B1CF4490F00FDB9B4 /* NSDictionary+SafeObject.h */,
+				E574BA7C1CF4490F00FDB9B4 /* NSDictionary+SafeObject.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		E574BA641CF4361500FDB9B4 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		E574BA6C1CF4392500FDB9B4 /* HomeViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = HomeViewController;
+			sourceTree = "<group>";
+		};
+		E574BA6D1CF439EC00FDB9B4 /* ShopCartViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ShopCartViewController;
+			sourceTree = "<group>";
+		};
+		E574BA6E1CF43A0B00FDB9B4 /* MeViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MeViewController;
+			sourceTree = "<group>";
+		};
+		E574BA6F1CF43A2400FDB9B4 /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E574BA701CF43A4300FDB9B4 /* BaseViewController.h */,
+				E574BA711CF43A4300FDB9B4 /* BaseViewController.m */,
+			);
+			path = BaseViewController;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -150,9 +284,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E574BA561CF4219500FDB9B4 /* Build configuration list for PBXNativeTarget "ShopFrame" */;
 			buildPhases = (
+				1E85CCCA5749D25CAB52A7F2 /* Check Pods Manifest.lock */,
 				E574BA221CF4219500FDB9B4 /* Sources */,
 				E574BA231CF4219500FDB9B4 /* Frameworks */,
 				E574BA241CF4219500FDB9B4 /* Resources */,
+				A9CA32F0D2CD4B16159F65D0 /* Embed Pods Frameworks */,
+				297E7CBD3B49272A6E93A65F /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -268,15 +405,67 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1E85CCCA5749D25CAB52A7F2 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		297E7CBD3B49272A6E93A65F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9CA32F0D2CD4B16159F65D0 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E574BA221CF4219500FDB9B4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				E574BA311CF4219500FDB9B4 /* ViewController.m in Sources */,
+				E574BA731CF43A4300FDB9B4 /* BaseViewController.m in Sources */,
 				E574BA2E1CF4219500FDB9B4 /* AppDelegate.m in Sources */,
 				E574BA2B1CF4219500FDB9B4 /* main.m in Sources */,
+				E574BA7D1CF4490F00FDB9B4 /* NSDictionary+SafeObject.m in Sources */,
+				E574BA771CF43ADD00FDB9B4 /* NetworkService.m in Sources */,
 				E574BA371CF4219500FDB9B4 /* ShopFrame.xcdatamodeld in Sources */,
+				E574BA7A1CF43AF700FDB9B4 /* NetworkServiceItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,9 +604,12 @@
 		};
 		E574BA571CF4219500FDB9B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 220D16039A5AAEF697B6AE90 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ShopFrame/PrefixHeader.pch";
 				INFOPLIST_FILE = ShopFrame/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ZRS.ShopFrame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -426,9 +618,12 @@
 		};
 		E574BA581CF4219500FDB9B4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 088F0B2AE8750562F11F0C3B /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ShopFrame/PrefixHeader.pch";
 				INFOPLIST_FILE = ShopFrame/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ZRS.ShopFrame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -502,6 +697,7 @@
 				E574BA581CF4219500FDB9B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E574BA591CF4219500FDB9B4 /* Build configuration list for PBXNativeTarget "ShopFrameTests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +706,7 @@
 				E574BA5B1CF4219500FDB9B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E574BA5C1CF4219500FDB9B4 /* Build configuration list for PBXNativeTarget "ShopFrameUITests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +715,7 @@
 				E574BA5E1CF4219500FDB9B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
