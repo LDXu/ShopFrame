@@ -12,7 +12,7 @@
 
 @property (nonatomic, strong) NSMutableArray *requestArray;
 @property (nonatomic, strong) UIView *loadingView;
-@property (nonatomic, weak) UIView *errorView;
+@property (nonatomic, strong) UIView *errorView;
 @property (nonatomic, strong) UIView *networkErrorView;
 @property (nonatomic, assign) UINavigationController* nav;
 
@@ -122,16 +122,16 @@
 /**
  *  网络请求上传参数
  */
-//- (LBNetworkServiceItem *)getServiceItem;
-//
-//- (void)startService;
-//
-//- (void)startServiceWithItem:(LBNetworkServiceItem *)item isShowLoading:(BOOL)isShowLoading;
-//
-//- (void)serviceSucceedWithResult:(id)result operation:(AFHTTPRequestOperation *)operation;
-//- (void)serviceFailedWithError:(NSError *)error operation:(AFHTTPRequestOperation *)operation;
-//
-//- (BOOL)isEqualUrl:(NSString *)url forOperation:(AFHTTPRequestOperation *)operation;
+- (NetworkServiceItem *)getServiceItem;
+
+- (void)startService;
+
+- (void)startServiceWithItem:(NetworkServiceItem *)item isShowLoading:(BOOL)isShowLoading;
+
+- (void)serviceSucceedWithResult:(id)result operation:(NSURLSessionDataTask *)operation;
+- (void)serviceFailedWithError:(NSError *)error operation:(NSURLSessionDataTask *)operation;
+
+- (BOOL)isEqualUrl:(NSString *)url forOperation:(NSURLSessionDataTask *)operation;
 
 - (void)showNetworkError;
 - (void)showError;

@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
+#import <RDVTabBarController.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
@@ -19,6 +20,8 @@
 
 - (void)saveContext;
 - (NSURL *)applicationDocumentsDirectory;
+
+@property (nonatomic, strong) RDVTabBarController *tabbarVC;
 
 
 @end
