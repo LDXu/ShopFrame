@@ -10,6 +10,7 @@
 #import "MeTableGropItem.h"
 #import "MeTableItem.h"
 #import "MeTableViewCell.h"
+#import "PasswordInputWindow.h"
 
 
 #import "RuntimePushListViewController.h"
@@ -33,7 +34,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSArray *functionArray = @[@{@"labelTile":@"runtime跳转到制定页面", @"controllerTitle":@"RuntimePushListViewController"}];
+    NSArray *functionArray = @[@{@"labelTile":@"runtime跳转到制定页面", @"controllerTitle":@"RuntimePushListViewController"}, @{@"labelTile":@"利用window实现密码锁定功能（密码：1234）", @"controllerTitle":@"PasswordInputWindow"}];
     [self getGropTileCreateItem:@"功能" getSubTitleArray:functionArray];
     
     
@@ -105,7 +106,12 @@
 {
     MeTableGropItem *gropItem = self.tbDataArray[indexPath.section];
     MeTableItem *item = gropItem.sectionData[indexPath.row];
-    [ZUtility runtimePush:item.controllerTitle dic:nil nav:self.navigationController];
+    if ([item.controllerTitle isEqualToString:@"PasswordInputWindow"]) {
+        [[PasswordInputWindow shareInstance] show];
+    } else {
+        [ZUtility runtimePush:item.controllerTitle dic:nil nav:self.navigationController];
+    }
+    
 }
 
 - (void)didReceiveMemoryWarning {

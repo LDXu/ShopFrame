@@ -38,6 +38,7 @@
 		E59BBC4D1CFD72BF00B9E8DB /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E59BBC4C1CFD72BF00B9E8DB /* BaseTableViewController.m */; };
 		E59BBC501CFD72EB00B9E8DB /* BaseCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E59BBC4F1CFD72EB00B9E8DB /* BaseCollectionViewController.m */; };
 		E59BBC531CFDA5D300B9E8DB /* BaseTableGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E59BBC521CFDA5D300B9E8DB /* BaseTableGroupViewController.m */; };
+		E5A258AB1D06BF4A00978309 /* PasswordInputWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = E5A258AA1D06BF4A00978309 /* PasswordInputWindow.m */; };
 		E5A5412B1D052BF9008506B5 /* RuntimePushSuperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5A5412A1D052BF9008506B5 /* RuntimePushSuperViewController.m */; };
 		E5A5412F1D053F48008506B5 /* RuntimePushFristViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5A5412E1D053F48008506B5 /* RuntimePushFristViewController.m */; };
 		E5A541321D053F5B008506B5 /* RuntimePushSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5A541311D053F5B008506B5 /* RuntimePushSecondViewController.m */; };
@@ -132,6 +133,8 @@
 		E59BBC4F1CFD72EB00B9E8DB /* BaseCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCollectionViewController.m; sourceTree = "<group>"; };
 		E59BBC511CFDA5D300B9E8DB /* BaseTableGroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableGroupViewController.h; sourceTree = "<group>"; };
 		E59BBC521CFDA5D300B9E8DB /* BaseTableGroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableGroupViewController.m; sourceTree = "<group>"; };
+		E5A258A91D06BF4A00978309 /* PasswordInputWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PasswordInputWindow.h; sourceTree = "<group>"; };
+		E5A258AA1D06BF4A00978309 /* PasswordInputWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PasswordInputWindow.m; sourceTree = "<group>"; };
 		E5A541291D052BF9008506B5 /* RuntimePushSuperViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RuntimePushSuperViewController.h; sourceTree = "<group>"; };
 		E5A5412A1D052BF9008506B5 /* RuntimePushSuperViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RuntimePushSuperViewController.m; sourceTree = "<group>"; };
 		E5A5412D1D053F48008506B5 /* RuntimePushFristViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RuntimePushFristViewController.h; sourceTree = "<group>"; };
@@ -408,9 +411,19 @@
 			path = AdvertiseViewController;
 			sourceTree = "<group>";
 		};
+		E5A2568F1D06BEEE00978309 /* passwordProtect */ = {
+			isa = PBXGroup;
+			children = (
+				E5A258A91D06BF4A00978309 /* PasswordInputWindow.h */,
+				E5A258AA1D06BF4A00978309 /* PasswordInputWindow.m */,
+			);
+			path = passwordProtect;
+			sourceTree = "<group>";
+		};
 		E5A541271D052ADA008506B5 /* Function */ = {
 			isa = PBXGroup;
 			children = (
+				E5A2568F1D06BEEE00978309 /* passwordProtect */,
 				E5A541281D052AF2008506B5 /* RuntimepushViewController */,
 			);
 			path = Function;
@@ -663,6 +676,7 @@
 				E5A5413F1D054389008506B5 /* MeTableGropItem.m in Sources */,
 				E574BA7A1CF43AF700FDB9B4 /* NetworkServiceItem.m in Sources */,
 				E57A352F1D0006FD009B84AE /* ShopCartViewController.m in Sources */,
+				E5A258AB1D06BF4A00978309 /* PasswordInputWindow.m in Sources */,
 				E5A541381D053F81008506B5 /* RuntimePushFourViewController.m in Sources */,
 				E59BBC531CFDA5D300B9E8DB /* BaseTableGroupViewController.m in Sources */,
 				E57A35201CFFFEF3009B84AE /* BaseTableViewCell.m in Sources */,
